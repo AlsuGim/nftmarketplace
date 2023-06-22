@@ -22,7 +22,6 @@ const Filter = () => {
   const [video, setVideo] = useState(true);
   const [music, setMusic] = useState(true);
 
-  //FUNCTION SECTION
   const openFilter = () => {
     if (!filter) {
       setFilter(true);

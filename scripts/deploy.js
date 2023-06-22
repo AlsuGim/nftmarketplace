@@ -5,15 +5,9 @@ async function main() {
   const nftMarketplace = await NFTMarketplace.deploy();
 
   await nftMarketplace.deployed();
+ 
 
-  // //TRANSFER FUNDS
-  // const TransferFunds = await hre.ethers.getContractFactory("TransferFunds");
-  // const transferFunds = await TransferFunds.deploy();
-
-  // await transferFunds.deployed();
-
-  console.log(` deployed contract Address ${nftMarketplace.address}`);
-  // console.log(` deployed contract Address ${transferFunds.address}`);
+  console.log(` deployed contract Address ${nftMarketplace.address}`); 
 }
 
 main().catch((error) => {

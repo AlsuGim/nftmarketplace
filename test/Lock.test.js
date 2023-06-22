@@ -24,6 +24,21 @@ describe("Lock", function () {
 
     return { lock, unlockTime, lockedAmount, owner, otherAccount };
   }
+  // function deployOneYearLockFixture() {
+  //   const ONE_YEAR_IN_SECS = 365 * 24 * 60 * 60;
+  //   const ONE_GWEI = 1_000_000_000;
+
+  //   const lockedAmount = ONE_GWEI;
+  //   const unlockTime = ( time.latest()) + ONE_YEAR_IN_SECS;
+
+  //   // Contracts are deployed using the first signer/account by default
+  //   const [owner, otherAccount] =  ethers.getSigners();
+
+  //   const Lock = ethers.getContractFactory("Lock");
+  //   const lock = Lock.deploy(unlockTime, { value: lockedAmount });
+
+  //   return { lock, unlockTime, lockedAmount, owner, otherAccount };
+  // }
 
   describe("Deployment", function () {
     it("Should set the right unlockTime", async function () {
